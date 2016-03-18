@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= 'Lista de Logs'
+
+  table
+    tr
+      th msisdn 
+      th response code
+      th response msg
+    for log in logs
+      tr
+        td=log.msisdn
+        td=log.response_code
+        td=log.response_msg
